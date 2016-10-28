@@ -1,0 +1,1247 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1">
+
+    <title>Kids Camp</title>
+    <link rel="icon" href="favicon.ico" type="image/png">
+    <link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
+
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300italic,400italic,500,500italic,700,700italic&subset=latin,cyrillic'
+          rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600'
+          rel='stylesheet' type='text/css'>
+
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css">
+    <link href="owl-carousel/owl.theme.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <!--[if IE]>
+    <style type="text/css">.pie {
+        behavior: url(PIE.htc);
+    }</style><![endif]-->
+
+    <script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
+    <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.js"></script>
+    <script type="text/javascript" src="js/wow.js"></script>
+    <script type="text/javascript" src="js/classie.js"></script>
+
+
+    <!--[if lt IE 9]>
+    <script src="js/respond-1.1.0.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/html5element.js"></script>
+    <![endif]-->
+
+
+</head>
+<body>
+<div class="c-logo-part"><!--c-logo-part-start-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-xs-6">
+                <img src="img/logom.png" alt="" class="img-responsive" width="160">
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <img src="img/logo.png" alt="" class="img-responsive" width="160">
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <p class="logo_phone">(044) 222-56-17<br>
+                    (096) 372-40-28<br>
+                    (099)-793-35-15</p>
+            </div>
+            <div class="col-md-3 col-xs-6">
+
+                <!-- Small modal -->
+                <button class="btn btn-primary logo_button " data-toggle="modal" data-target="#myModal2">Заказать
+                    звонок
+                </button>
+
+                <div class="modal fade bs-example-modal-sm" id="myModal2" tabindex="-1" role="dialog"
+                     aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+
+                            <h1>Мы перезвоним Вам в течении <br>15 минут, если Вы не укажете <br> другое удобное для Вас
+                                время</h1>
+
+                            <form name="ajax-form" id="ajax-form-u193" class="appt-form" action="scripts/form-u193.php"
+                                  method="post" style="padding: 20px;">
+
+                                <div class="alert alert-success hidden contactSuccess">
+                                    <strong>Сообщение отправлено!</strong> Ваше сообщение было нам отправлено!
+                                </div>
+
+                                <div class="alert alert-error hidden contactError">
+                                    <strong>Ошибка!</strong> Что-то пошло не так, сообщение не отправлено.
+                                </div>
+
+
+                                <label for="custom_U198">
+                                    <span class="error err-name">Пожалуйста введите имя</span>
+                                </label>
+                                <input type="text" class="appt-form-txt" name="Name" id="custom_U198" placeholder="Введите имя"/>
+
+
+                                <label for="custom_U202">
+                                    <span class="error err-phone">Пожалуйста введите телефон</span>
+                                    <span class="error err-phonevld">Неправильный формат телефона</span>
+                                </label>
+                                <input type="text" class="appt-form-txt" name="Phone" id="custom_U202"
+                                       placeholder="Введите номер телефона"/>
+
+
+                                <label for="custom_U864">
+                                    <span class="error err-time">Укажите время для звонка</span>
+                                    <span class="error err-timevld">Укажите время в формате чч:мм</span>
+                                </label>
+                                <input type="text" class="appt-form-txt" name="Time" id="custom_U864"
+                                       placeholder="Укажите время для звонка в формате чч:мм"/>
+
+
+                                <section class="color-7 ">
+
+                                    <button class="btn__first_form send" id="send1"
+                                            data-loading-text="Отправка..."
+                                            type="submit" style="width: 100%;float: left;">Отправить
+                                    </button>
+
+                                </section>
+
+
+                                <div class="row text-center"><p class="form__attention">Мы против спама и не передаём
+                                    Ваши данные 3-м лицам!</p></div>
+                                <div class="error text-align-center err-form">Возникли проблемы при заполнении
+                                    формы! Проверьте все поля!
+                                </div>
+                                <div class="error text-align-center err-timedout">Нет связи с сервером, повторите
+                                    попытку позже
+                                </div>
+                                <div class="error err-state"></div>
+                                <div class="clear"></div>
+
+
+                            </form>
+
+
+                            <div class="clear"></div>
+                            <div class="ajaxsuccess">Cообщение отправлено!</div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!--c-logo-part-end-->
+<nav class="main-nav-outer" id="test"><!--main-nav-start-->
+    <div class="container">
+
+        <ul class="main-nav">
+            <li><a href="#header">О нас</a></li>
+            <li><a href="#service">Программа</a></li>
+            <li><a href="#testimonials">Отзывы</a></li>
+            <li><a href="#client">Цены</a></li>
+            <li><a href="#map">Контакты</a></li>
+        </ul>
+        <a class="res-nav_click" href="#"><i class="fa-bars"></i></a>
+    </div>
+</nav><!--main-nav-end-->
+<div style="overflow:hidden;">
+    <header class="header" id="header"><!--header-start-->
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-6 col-xs-12  header__map-plate  animated fadeInDown delay-1s">
+                    <div class="map__plate" style="margin-top: 20px;">
+                        <h5>
+                            1-я смена: 06-24 июня 2016<br> 2-я смена: 18-29 июля 2016<br>3-я смена: 15-26 августа 2016
+                        </h5>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <h1 class="animated fadeInDown delay-07s header__heading">Нескучные каникулы!</h1>
+                    <p class="header__heading animated fadeInUp delay-1s">
+                        Англоязычный дневной детский лагерь от PRO Language Centre. Место, где развивается личность!
+                    </p>
+                    <p class="header__text animated fadeInUp delay-1s">
+                        Английский, мастер–классы, занятия на свежем воздухе, квесты и экскурсии — скучать не придется.
+
+                    </p>
+
+                    <div class="header_arrow ">
+                        <button class="btn btn-primary logo_button link animated fadeInUp delay-1s" data-toggle="modal"
+                                data-target="#myModal3">Записаться на презентацию
+                        </button>
+
+                        <div class="modal fade bs-example-modal-sm" id="myModal3" tabindex="-1" role="dialog"
+                             aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×
+                                    </button>
+                                    <h1>Забронировать место
+                                        на презентацию</h1>
+
+                                    <form name="ajax-form" id="ajax-form-u364" class="appt-form"
+                                          action="scripts/form-u364.php"
+                                          method="post" style="padding: 20px;">
+
+                                        <div class="alert alert-success hidden contactSuccess">
+                                            <strong>Сообщение отправлено!</strong> Ваше сообщение было нам отправлено!
+                                        </div>
+
+                                        <div class="alert alert-error hidden contactError">
+                                            <strong>Ошибка!</strong> Что-то пошло не так, сообщение не отправлено.
+                                        </div>
+
+
+                                        <label for="custom_U371">
+                                            <span class="error err-name">Пожалуйста введите имя</span>
+                                        </label>
+                                        <input type="text" class="appt-form-txt" name="Name" id="custom_U371"
+                                               placeholder="Введите имя"/>
+
+
+                                        <label for="custom_U365">
+                                            <span class="error err-phone">Пожалуйста введите телефон</span>
+                                            <span class="error err-phonevld">Неправильный формат телефона</span>
+                                        </label>
+                                        <input type="text" class="appt-form-txt" name="Phone" id="custom_U365"
+                                               placeholder="Введите номер телефона"/>
+
+
+                                        <label for="custom_U364">
+                                            <span class="error err-email">Пожалуйста введите e-mail</span>
+                                            <span class="error err-emailvld">Неправильный формат e-mail</span>
+                                        </label>
+                                        <input type="email" class="appt-form-txt" name="Email" id="custom_U364"
+                                               placeholder="Введите адрес эл. почты"/>
+
+                                        <label for="custom_U366">
+                                            <p style="padding: 10px;font-size: 14px;">Выберите дату</p>
+                                            <span class="error err-date">Пожалуйста введите дату</span>
+                                            <span class="error err-datevld">Неправильный формат даты</span>
+                                            <span class="error err-datepast">Дата не может быть в прошлом</span>
+                                        </label>
+
+                                        <div class="input-append date" id="pres-date" data-date-format="dd-mm-yyyy">
+                                            <table style="width: 100%;">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <input size="16" type="text" name="Date" id="custom_U366" readonly />
+                                                        </td>
+                                                        <td>
+                                                            <span class="add-on"><i class="fa fa-lg fa-th icon-th"></i></span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <section class="color-7 ">
+
+                                            <button class="btn__first_form send" data-loading-text="Отправка..."
+                                                    type="submit" style="width: 100%;float: left;">Забронировать
+                                            </button>
+
+                                        </section>
+
+
+                                        <div class="row text-center"><p class="form__attention" style="color: #080808">
+                                            Мы против спама и не передаём Ваши данные 3-м лицам!</p></div>
+                                        <div class="error text-align-center err-form">Возникли проблемы при заполнении формы! Проверьте все поля!
+                                        </div>
+                                        <div class="error text-align-center err-timedout">Нет связи с сервером, повторите попытку позже
+                                        </div>
+                                        <div class="error err-state"></div>
+                                        <div class="clear"></div>
+
+
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="header__text animated fadeInUp delay-1s">
+                        Узнайте все подробно на бесплатной презентации Kids'Camp
+                    </p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </header><!--header-end-->
+
+
+    <section class="main-section" id="service"><!--main-section-start-->
+        <div class="container">
+            <h2>Kids' Camp от PRO Language Centre это:</h2>
+
+            <div class="row">
+                <div class="col-md-4 col-xs-12 text-center">
+                    <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader-shadow"></div>
+                        <img src="img/1.png" alt="">
+
+                    </div>
+                    <h5 class="wow fadeInDown delay-03s">Веселая <br> программа</h5>
+                </div>
+                <div class="col-md-4 col-xs-12 text-center">
+                    <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader-shadow"></div>
+                        <img src="img/2.jpg" alt="" style="border-radius: 50%;">
+
+                    </div>
+                    <h5 class="wow fadeInDown delay-03s">Насыщенный <br>мероприятиями<br> день</h5>
+                </div>
+                <div class="col-md-4 col-xs-12 text-center">
+                    <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader-shadow"></div>
+                        <img src="img/3.jpg" alt="" style="border-radius: 50%; border: 1px solid #0091E0">
+
+                    </div>
+                    <h5 class="wow fadeInDown delay-03s">Новые <br>друзья</h5>
+                </div>
+
+            </div>
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-md-6 col-xs-12 text-center">
+                    <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader-shadow"></div>
+                        <img src="img/4.jpg" alt="" style="border-radius: 50%;">
+
+                    </div>
+                    <h5 class="wow fadeInDown delay-03s">Профессиональные <br> преподаватели</h5>
+                </div>
+                <div class="col-md-6 col-xs-12 text-center">
+                    <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader-shadow"></div>
+                        <img src="img/5.jpg" alt="" style="border-radius: 50%;">
+
+                    </div>
+                    <h5 class="wow fadeInDown delay-03s">Изучение английского <br>в англоязычной среде</h5>
+                </div>
+            </div>
+        </div>
+    </section><!--main-section-end-->
+
+
+    <section class="business-talking"><!--business-talking-start-->
+        <div class="container">
+            <h2>5 ПОДСКАЗОК КАК ПРИВЛЕЧЬ РЕБЕНКА<br> К ИЗУЧЕНИЮ АНГЛИЙСКОГО ЯЗЫКА</h2>
+            <div class="row">
+
+                <form name="ajax-form" id="ajax-form-u1993" class="appt-form" action="scripts/form-u1993.php" method="post">
+
+                    <div class="alert alert-success hidden contactSuccess">
+                        <strong>Сообщение отправлено!</strong> Ваше сообщение было нам отправлено!
+                    </div>
+
+                    <div class="alert alert-error hidden contactError">
+                        <strong>Ошибка!</strong> Что-то пошло не так, сообщение не отправлено.
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="custom_U2005">
+                            <span class="error err-name">Пожалуйста введите имя</span>
+                        </label>
+                        <input type="text" class="appt-form-txt" name="Name" id="custom_U2005" placeholder="Введите
+                        имя"/>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="custom_U1998">
+                            <span class="error err-phone">Пожалуйста введите телефон</span>
+                            <span class="error err-phonevld">Неправильный формат телефона</span>
+                        </label>
+                        <input type="text" class="appt-form-txt" name="Phone" id="custom_U1998"
+                               placeholder="Введите номер телефона"/>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="custom_U1999">
+                            <span class="error err-email">Пожалуйста введите e-mail</span>
+                            <span class="error err-emailvld">Неправильный формат e-mail</span>
+                        </label>
+                        <input type="email" class="appt-form-txt" name="email" id="custom_U1999"
+                               placeholder="Введите адрес эл. почты"/>
+                    </div>
+
+
+                    <div class="row ">
+                        <div class=" col-md-4 text-center"></div>
+                        <div class=" col-md-4 text-center">
+
+                            <section class="color-7 ">
+                                <button class="btn__first_form send" data-loading-text="Отправка..." type="submit"
+                                        style="width: 100%;float: left;">Получить бесплатно мини-книгу
+                                </button>
+
+                            </section>
+                        </div>
+                        <div class=" col-md-4 text-center"></div>
+                    </div>
+                    <div class="row text-center"><p class="form__attention">Мы против спама и не передаём Ваши данные
+                        3-м лицам!</p></div>
+                    <div class="error text-align-center err-form">Возникли проблемы при заполнении формы! Проверьте
+                        все поля!
+                    </div>
+                    <div class="error text-align-center err-timedout">Нет связи с сервером, повторите попытку
+                        позже
+                    </div>
+                    <div class="error err-state"></div>
+                    <div class="clear"></div>
+
+
+                </form>
+
+                <div class="clear"></div>
+                <div class="ajaxsuccess">Cообщение отправлено!</div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </section><!--business-talking-end-->
+
+    <section class="main-section alabaster"><!--main-section alabaster-start-->
+        <div class="cover">
+            <div class="container">
+                <div class="row">
+                    <h2 style="color: #fff;">Мы не навязываем изучение английского ребенку, <br>а создаем комфортные
+                        условия, используя <br> игровые методики и максимум живого общения</h2>
+
+                    <div class="col-md-6 col-xs-12 featured-work">
+
+                        <div class="featured-box">
+                            <div class="featured-box-col1 wow fadeInRight delay-02s">
+                                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="featured-box-col2 wow fadeInRight delay-02s">
+                                <p>Изучение английского в англоязычной среде
+                                </p>
+                            </div>
+                        </div>
+                        <div class="featured-box">
+                            <div class="featured-box-col1 wow fadeInRight delay-02s">
+                                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="featured-box-col2 wow fadeInRight delay-02s">
+                                <p>Дети и преподаватели используют английский язык в ежедневном общении
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="featured-box">
+                            <div class="featured-box-col1 wow fadeInRight delay-02s">
+                                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="featured-box-col2 wow fadeInRight delay-02s">
+                                <p>«Конкурсы, квесты и мастер-классы на английском языке – развлечения и всестороннее
+                                    развитие ребенка»
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="featured-box">
+                            <div class="featured-box-col1 wow fadeInRight delay-02s">
+                                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="featured-box-col2 wow fadeInRight delay-02s">
+                                <p>Скучно не будет никому! Обучение, игры на свежем воздухе, увлекательные экскурсии и
+                                    мастер-классы не оставят места для скуки
+                                </p>
+                            </div>
+                        </div>
+                        <div class="featured-box">
+                            <div class="featured-box-col1 wow fadeInRight delay-02s">
+                                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="featured-box-col2 wow fadeInRight delay-02s">
+                                <p>Мы используем ассоциативное мышлении в обучении
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 col-xs-12 wow fadeInLeft">
+                        <!-- Carousel
+        ================================================== -->
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                                <li data-target="#myCarousel" data-slide-to="3"></li>
+                                <li data-target="#myCarousel" data-slide-to="4"></li>
+                                <li data-target="#myCarousel" data-slide-to="5"></li>
+                                <li data-target="#myCarousel" data-slide-to="6"></li>
+                                <li data-target="#myCarousel" data-slide-to="7"></li>
+                                <li data-target="#myCarousel" data-slide-to="8"></li>
+                                <li data-target="#myCarousel" data-slide-to="9"></li>
+                                <li data-target="#myCarousel" data-slide-to="10"></li>
+                                <li data-target="#myCarousel" data-slide-to="11"></li>
+                                <li data-target="#myCarousel" data-slide-to="12"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="img/kid_1.jpg" style="width:100%" class="img-responsive">
+
+                                </div>
+                                <div class="item">
+                                    <img src="img/kid_2.jpg" style="width:100%" class="img-responsive">
+
+                                </div>
+                                <div class="item">
+                                    <img src="img/kid_3.jpg" style="width:100%" class="img-responsive">
+
+                                </div>
+                                <div class="item">
+                                    <img src="img/kid_4.jpg" style="width:100%" class="img-responsive">
+
+                                </div>
+                                <div class="item">
+                                    <img src="img/kid_5.jpg" style="width:100%" class="img-responsive">
+
+                                </div>
+                                <div class="item">
+                                    <img src="img/kid_6.jpg" style="width:100%" class="img-responsive">
+
+                                </div>
+                                <div class="item">
+                                    <img src="img/kid_7.jpg" style="width:100%" class="img-responsive">
+
+                                </div>
+                                <div class="item">
+                                    <img src="img/kid_8.jpg" style="width:100%" class="img-responsive">
+
+                                </div>
+                                <div class="item">
+                                    <img src="img/kid_9.jpg" style="width:100%" class="img-responsive">
+
+                                </div>
+                                <div class="item">
+                                    <img src="img/kid_10.jpg" style="width:100%" class="img-responsive">
+
+                                </div>
+                                <div class="item">
+                                    <img src="img/kid_11.jpg" style="width:100%" class="img-responsive">
+
+                                </div>
+                                <div class="item">
+                                    <img src="img/kid_12.jpg" style="width:100%" class="img-responsive">
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- /.carousel -->
+
+
+                        <div class="jcarousel">
+                            <ul>
+                                <li>...</li>
+                                <li>...</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--main-section alabaster-end-->
+
+    <section class="business-talking"><!--business-talking-start-->
+        <div class="container">
+            <h2 style="text-transform: none; font-size: 30px;">Заполните форму ниже и мы отправим Вам детальную <br>
+                программу Kids' Camp в течении 20 минут</h2>
+            <div class="row">
+
+                <form name="ajax-form" id="ajax-form-u1010" class="appt-form" action="scripts/form-u1010.php" method="post">
+
+                    <div class="alert alert-success hidden contactSuccess">
+                        <strong>Сообщение отправлено!</strong> Ваше сообщение было нам отправлено!
+                    </div>
+
+                    <div class="alert alert-error hidden contactError">
+                        <strong>Ошибка!</strong> Что-то пошло не так, сообщение не отправлено.
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="custom_U1026">
+                            <span class="error err-name">Пожалуйста введите имя</span>
+                        </label>
+                        <input type="text" class="appt-form-txt" name="Name" id="custom_U1026"
+                               placeholder="Введите имя"/>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="custom_U1035">
+                            <span class="error err-phone" >Пожалуйста введите телефон</span>
+                            <span class="error err-phonevld" >Неправильный формат телефона</span>
+                        </label>
+                        <input type="text" class="appt-form-txt" name="Phone" id="custom_U1035"
+                               placeholder="Введите номер телефона"/>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="custom_U1035">
+                            <span class="error err-email">Пожалуйста введите e-mail</span>
+                            <span class="error err-emailvld">Неправильный формат e-mail</span>
+                        </label>
+                        <input type="email" class="appt-form-txt" name="Email" id="custom_U1036"
+                               placeholder="Введите адрес эл. почты"/>
+                    </div>
+
+                    <div class="row ">
+                        <div class=" col-md-4 text-center"></div>
+                        <div class=" col-md-4 text-center">
+
+                            <section class="color-7 ">
+
+                                <button class="btn__first_form send"
+                                        data-loading-text="Отправка..." type="submit"
+                                        style="width: 100%;float: left;">Получить программу
+                                </button>
+
+                            </section>
+                        </div>
+                        <div class=" col-md-4 text-center"></div>
+                    </div>
+                    <div class="row text-center"><p class="form__attention">Мы против спама и не передаём Ваши данные
+                        3-м лицам!</p></div>
+                    <div class="error text-align-center err-form">Возникли проблемы при заполнении формы! Проверьте
+                        все поля!
+                    </div>
+                    <div class="error text-align-center err-timedout">Нет связи с сервером, повторите попытку
+                        позже
+                    </div>
+                    <div class="error err-state"></div>
+                    <div class="clear"></div>
+
+
+                </form>
+
+                <div class="clear"></div>
+                <div class="ajaxsuccess">Cообщение отправлено!</div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </section><!--business-talking-end-->
+
+
+    <section id="testimonials">
+        <div class="container">
+            <div class="row">
+                <h2 style="margin-bottom: 50px;">Отзывы о PRO Language Centre</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-xs-12 ">
+                    <div class="responsive-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZZyATC7Cugo" frameborder="0"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12 wow fadeInLeft">
+                    <div id="owl-demo" class="owl-carousel owl-theme">
+
+                        <div class="item"><img src="img/testimonial_1.png" alt=""></div>
+                        <div class="item"><img src="img/testimonial_2.png" alt=""></div>
+                        <div class="item"><img src="img/testimonial_3.png" alt=""></div>
+                        <div class="item"><img src="img/testimonial_4.png" alt=""></div>
+                        <div class="item"><img src="img/testimonial_5.png" alt=""></div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="row text-center" id="client">
+                <h5>Мы работаем, только по программе <span>всё включено</span></h5>
+                <p class="testimonial__fee">В стоимость входят:</p>
+                <div class="col-md-6 col-xs-12 wow fadeInLeft">
+                    <ul>
+                        <li><img src="img/ul1.png"/>
+                            <p> 2 ежедневных занятия по английскому языку</p>
+                        </li>
+                        <li>
+                            <img src="img/ul2.png"/>
+                            <p> Ежедневные творческие мастер-классы</p>
+                        </li>
+                        <li>
+                            <img src="img/ul3.png"/>
+                            <p>Все учебные материалы и поделки для мастер-классов</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-xs-12 wow fadeInLeft">
+                    <ul>
+                        <li><img src="img/ul4.png"/>
+                            <p>Обед в ресторане и полудник</p>
+                        </li>
+                        <li>
+                            <img src="img/ul5.png"/>
+                            <p> 3 экскурсионные программы!</p>
+                        </li>
+                        <li>
+                            <img src="img/ul6.png"/>
+                            <p>Ежедневная развлекательная программа: конкурсы, квесты, игры на свежем воздухе </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="buttonprice">
+            <button class="btn btn-primary logo_button link animated fadeInUp delay-1s booking__button"
+                    data-toggle="modal" data-target="#myModal5">Узнать цену
+            </button>
+        </div>
+        <div class="modal fade bs-example-modal-sm" id="myModal5" tabindex="-1" role="dialog"
+             aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h1>Заполните форму и мы перезвоним Вам в течении 30 минут
+                    </h1>
+                    <form name="ajax-form" id="ajax-form-u14799" class="appt-form" action="scripts/form-u14799.php"
+                          method="post" style="padding: 20px;">
+
+                        <div class="alert alert-success hidden contactSuccess">
+                            <strong>Сообщение отправлено!</strong> Ваше сообщение было нам отправлено!
+                        </div>
+
+                        <div class="alert alert-error hidden contactError">
+                            <strong>Ошибка!</strong> Что-то пошло не так, сообщение не отправлено.
+                        </div>
+
+
+                        <label for="custom_U1514">
+                            <span class="error err-name">Пожалуйста введите имя</span>
+                        </label>
+                        <input type="text" class="appt-form-txt" name="Name" id="custom_U1514"
+                               placeholder="Введите имя"/>
+
+
+                        <label for="custom_U1472">
+                            <span class="error err-phone">Пожалуйста введите телефон</span>
+                            <span class="error err-phonevld">Неправильный формат телефона</span>
+                        </label>
+                        <input type="text" class="appt-form-txt" name="Phone" id="custom_U1472"
+                               placeholder="Введите номер телефона"/>
+
+
+                        <section class="color-7">
+
+                            <button class="btn__first_form send"
+                                    data-loading-text="Отправка..."
+                                    type="submit" style="width: 100%;float: left;">Узнать цену
+                            </button>
+
+                        </section>
+
+
+                        <div class="row text-center">Мы против спама и не передаём Ваши данные 3-м лицам!</div>
+                        <div class="error text-align-center err-form">Возникли проблемы при заполнении
+                            формы! Проверьте все поля!
+                        </div>
+                        <div class="error text-align-center timedout">Нет связи с сервером, повторите
+                            попытку позже
+                        </div>
+                        <div class="error err-state"></div>
+                        <div class="clear"></div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="booking">
+        <div class="container text-center">
+            <h2>В ГРУППЕ ВСЕГО 10 МЕСТ!</h2>
+            <p>Зарезервируйте место для своего ребенка прямо сейчас и получите<br> моментальную скидку 5%<br>
+                Осталось: <span>4 места (группа 6-8 лет)<br>
+            3 места (группа 9-10)</span></p>
+            <div class="col-md-4 col-xs-12"></div>
+            <div class="col-md-4 col-xs-12">
+                <button class="btn btn-primary logo_button link animated fadeInUp delay-1s booking__button"
+                        data-toggle="modal" data-target="#myModal4">Забронировать место
+                </button>
+
+                <div class="modal fade bs-example-modal-sm" id="myModal4" tabindex="-1" role="dialog"
+                     aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h1>Забронировать место
+                            </h1>
+                            <form name="ajax-form" id="ajax-form-u1479" class="appt-form" action="scripts/form-u1479.php"
+                                  method="post" style="padding: 20px;">
+
+                                <div class="alert alert-success hidden contactSuccess">
+                                    <strong>Сообщение отправлено!</strong> Ваше сообщение было нам отправлено!
+                                </div>
+
+                                <div class="alert alert-error hidden contactError">
+                                    <strong>Ошибка!</strong> Что-то пошло не так, сообщение не отправлено.
+                                </div>
+
+
+                                <label for="custom_U1504">
+                                    <span class="error err-name">Пожалуйста введите имя</span>
+                                </label>
+                                <input type="text" class="appt-form-txt" name="Name" id="custom_U1504"
+                                       placeholder="Введите имя"/>
+
+
+                                <label for="custom_U1482">
+                                    <span class="error err-phone">Пожалуйста введите телефон</span>
+                                    <span class="error err-phonevld">Неправильный формат телефона</span>
+                                </label>
+                                <input type="text" class="appt-form-txt" name="Phone" id="custom_U1482"
+                                       placeholder="Введите номер телефона"/>
+
+
+                                <label for="custom_U1483">
+                                    <span class="error err-email">Пожалуйста введите e-mail</span>
+                                    <span class="error err-emailvld">Неправильный формат e-mail</span>
+                                </label>
+                                <input type="email" class="appt-form-txt" name="Email" id="custom_U1483"
+                                       placeholder="Введите адрес эл. почты"/>
+
+
+                                <section class="color-7">
+
+                                    <button class="btn__first_form send"
+                                            data-loading-text="Отправка..."
+                                            type="submit" style="width: 100%;float: left;">Забронировать
+                                    </button>
+
+                                </section>
+
+
+                                <div class="row text-center">Мы против спама и не передаём Ваши данные 3-м лицам!</div>
+                                <div class="error text-align-center err-form">Возникли проблемы при заполнении
+                                    формы! Проверьте все поля!
+                                </div>
+                                <div class="error text-align-center err-timedout">Нет связи с сервером, повторите
+                                    попытку позже
+                                </div>
+                                <div class="error err-state"></div>
+                                <div class="clear"></div>
+
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-12"></div>
+
+        </div>
+    </section>
+
+
+    <section id="presentation">
+        <div class="container text-center">
+            <h3>
+                ХОТИТЕ ЛИЧНО ОЦЕНИТЬ И ПОЗНАКОМИТЬСЯ С ЛАГЕРЕМ <br> ПРЕЖДЕ, ЧЕМ ЗАПИСАТЬ РЕБЕНКА?
+            </h3>
+            <h1>ПРИХОДИТЕ К НАМ НА БЕСПЛАТНУЮ ПРЕЗЕНТАЦИЮ,<br>
+                ОЦЕНИТЕ МАСТЕР-КЛАССЫ <br> И ЗАНЯТИЯ ДЛЯ ДЕТЕЙ</h1>
+            <p>Выберите дату, которая Вам подходит, забронируйте посещение <br> Kids' Camp и убедитесь, что нам можно
+                доверить своего ребенка</p>
+            <div class="row">
+
+                <form name="ajax-form" id="ajax-form-u1616" class="appt-form" action="scripts/form-u1616.php" method="post">
+
+                    <div class="alert alert-success hidden contactSuccess">
+                        <strong>Сообщение отправлено!</strong> Ваше сообщение было нам отправлено!
+                    </div>
+
+                    <div class="alert alert-error hidden contactError">
+                        <strong>Ошибка!</strong> Что-то пошло не так, сообщение не отправлено.
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="custom_U1633">
+                            <span class="error err-name">Пожалуйста введите имя</span>
+                        </label>
+                        <input type="text" class="appt-form-txt" name="Name" id="custom_U1633"
+                               placeholder="Введите имя"/>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="custom_U1625">
+                            <span class="error err-phone">Пожалуйста введите телефон</span>
+                            <span class="error err-phonevld">Неправильный формат телефона</span>
+                        </label>
+                        <input type="text" class="appt-form-txt" name="Phone" id="custom_U1625"
+                               placeholder="Введите номер телефона"/>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="custom_U1628">
+                            <span class="error err-email">Пожалуйста введите e-mail</span>
+                            <span class="error err-emailvld">Неправильный формат e-mail</span>
+                        </label>
+                        <input type="email" class="appt-form-txt" name="Email" id="custom_U1628"
+                               placeholder="Введите адрес эл. почты"/>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-4">
+
+                        </div>
+                        <div class="col-md-4">
+                        <label for="custom_U1629">
+                            <p style="padding: 10px;">Выберите дату</p>
+                            <span class="error err-date">Пожалуйста введите дату</span>
+                            <span class="error err-datevld">Неправильный формат даты</span>
+                            <span class="error err-datepast">Дата не может быть в прошлом</span>
+                        </label>
+
+                            <div class="input-append date" id="pres-date2" data-date-format="dd-mm-yyyy">
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td>
+                                            <input size="16" type="text" name="Date" id="custom_U1629" readonly>
+                                        </td>
+                                        <td>
+                                            <span class="add-on"><i class="fa fa-lg fa-th icon-th"></i></span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+
+                        </div>
+                    </div>
+
+                    <div class="row ">
+                        <div class=" col-md-4 text-center"></div>
+                        <div class=" col-md-4 text-center">
+
+                            <section class="color-7">
+
+                                <button class="btn__first_form send"
+                                        data-loading-text="Отправка..." type="submit"
+                                        style="width: 100%;float: left;">Записаться на бесплатную презентацию
+                                </button>
+
+                            </section>
+                        </div>
+                        <div class=" col-md-4 text-center"></div>
+                    </div>
+                    <div class="error text-align-center err-form">Возникли проблемы при заполнении формы! Проверьте
+                        все поля!
+                    </div>
+                    <div class="error text-align-center err-timedout">Нет связи с сервером, повторите попытку
+                        позже
+                    </div>
+                    <div class="error err-state"></div>
+                    <div class="clear"></div>
+
+
+                </form>
+
+                <div class="clear"></div>
+                <div class="ajaxsuccess">Cообщение отправлено!</div>
+                <div class="clear"></div>
+            </div>
+            <div class="row ">
+                <div class=" col-md-4 text-center"></div>
+                <div class=" col-md-4 text-center">
+
+                    <section class="color-7 " id="btn-click">
+
+                        <span>Мы против спама и не передаём Ваши данные 3-м лицам!</span>
+
+                    </section>
+                </div>
+                <div class=" col-md-4 text-center"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="map">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <div class="map__plate">
+                        <p>г. Киев, ул. Якира 13<br>
+                            (м.Лукьяновская)<br>
+                            044 222 56 17<br>
+                            096 372 40 28<br>
+                            camp.prolc@gmail.com</p>
+                        <p>График работы офиса<br>
+                            Пн - Пт: 10:00 - 19:00<br>
+                            Сб: 10:00 - 14:00<br>
+                            Вс: выходной</p>
+
+                        <p>Ежедневная жизнь лагеря на нашей страничке в facebook</p>
+
+                        <ul class="map__social_icons">
+
+                            <li><a href="https://www.facebook.com/camp.prolc" target="_blank"><img
+                                    src="img/fb.png"/></a></li>
+
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12"></div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="map__plate">
+                        <h5>
+                            ЕСТЬ ВОПРОСЫ?<br>
+                            Напишите нам<br>
+                            и мы Вам перезвоним<br>
+                            на протяжении 15 минут
+
+                        </h5>
+
+                        <form name="ajax-form" id="ajax-form-u2068" class="appt-form" action="scripts/form-u2068.php"
+                              method="post">
+
+                            <div class="alert alert-success hidden contactSuccess">
+                                <strong>Сообщение отправлено!</strong> Ваше сообщение было нам отправлено!
+                            </div>
+
+                            <div class="alert alert-error hidden contactError">
+                                <strong>Ошибка!</strong> Что-то пошло не так, сообщение не отправлено.
+                            </div>
+
+
+                            <label for="custom_U2093">
+                                <span class="error err-name">Пожалуйста введите имя</span>
+                            </label>
+                            <input type="text" class="appt-form-txt" name="Name" id="custom_U2093"
+                                   placeholder="Введите имя"/>
+
+
+                            <label for="custom_U2088">
+                                <span class="error err-phone">Пожалуйста введите телефон</span>
+                                <span class="error err-phonevld">Неправильный формат телефона</span>
+                            </label>
+                            <input type="text" class="appt-form-txt" name="Phone" id="custom_U2088"
+                                   placeholder="Введите номер телефона"/>
+
+
+                            <label for="custom_U2088">
+                                <span class="error err-email">Пожалуйста введите e-mail</span>
+                                <span class="error err-emailvld">Неправильный формат e-mail</span>
+                            </label>
+                            <input type="email" class="appt-form-txt" name="Email" id="custom_U2089"
+                                   placeholder="Введите адрес эл. почты"/>
+
+
+                            <section class="color-7">
+
+                                <button class="btn__first_form send"
+                                        data-loading-text="Отправка..." type="submit"
+                                        style="width: 100%;float: left;">Отправить
+                                </button>
+
+                            </section>
+
+
+                            <div class="row text-center"><p class="form__attention">Мы против спама и не передаём Ваши
+                                данные 3-м лицам!</p></div>
+                            <div class="error text-align-center err-form">Возникли проблемы при заполнении формы!
+                                Проверьте все поля!
+                            </div>
+                            <div class="error text-align-center err-timedout">Нет связи с сервером, повторите
+                                попытку позже
+                            </div>
+                            <div class="error err-state"></div>
+                            <div class="clear"></div>
+
+
+                        </form>
+
+                        <div class="clear"></div>
+                        <div class="ajaxsuccess">Cообщение отправлено!</div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 col-xs-6">
+                    <img src="img/logo.png" alt="" class="img-responsive" width="160" />
+                </div>
+                <div class="col-md-3 col-xs-6">
+
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <p class="logo_phone">(044) 222-56-17<br>
+                        (096) 372-40-28<br>
+                        (099)-793-35-15</p>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <!-- Small modal -->
+                    <button class="btn btn-primary logo_button" data-toggle="modal" data-target="#myModal2">Заказать
+                        звонок
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#test').scrollToFixed();
+        $('.res-nav_click').click(function () {
+            $('.main-nav').slideToggle();
+            return false
+
+        });
+
+    });
+</script>
+
+<script>
+    wow = new WOW(
+            {
+                animateClass: 'animated',
+                offset: 100
+            }
+    );
+    wow.init();
+
+</script>
+
+
+<script type="text/javascript">
+    $(window).load(function () {
+
+        $('.main-nav li a').bind('click', function (event) {
+            var $anchor = $(this);
+
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top - 102
+            }, 1500, 'easeInOutExpo');
+            /*
+             if you don't want to use the easing effects:
+             $('html, body').stop().animate({
+             scrollTop: $($anchor.attr('href')).offset().top
+             }, 1000);
+             */
+            event.preventDefault();
+        });
+    })
+</script>
+
+<script type="text/javascript">
+
+    $(window).load(function () {
+
+
+        var $container = $('.portfolioContainer'),
+                $body = $('body'),
+                colW = 375,
+                columns = null;
+
+
+        $container.isotope({
+            // disable window resizing
+            resizable: true,
+            masonry: {
+                columnWidth: colW
+            }
+        });
+
+        $(window).smartresize(function () {
+            // check if columns has changed
+            var currentColumns = Math.floor(( $body.width() - 30 ) / colW);
+            if (currentColumns !== columns) {
+                // set new column count
+                columns = currentColumns;
+                // apply width to container manually, then trigger relayout
+                $container.width(columns * colW)
+                        .isotope('reLayout');
+            }
+
+        }).smartresize(); // trigger resize to set container width
+        $('.portfolioFilter a').click(function () {
+            $('.portfolioFilter .current').removeClass('current');
+            $(this).addClass('current');
+
+            var selector = $(this).attr('data-filter');
+            $container.isotope({
+                filter: selector
+            });
+            return false;
+        });
+
+    });
+
+</script>
+<script>
+    $(document).ready(function () {
+
+        $("#owl-demo").owlCarousel({
+
+            navigation: false, // Show next and prev buttons
+            slideSpeed: 300,
+            paginationSpeed: 400,
+            singleItem: true,
+            pagination: true,
+            autoPlay: true
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        createDatePicker('#pres-date');
+        createDatePicker('#pres-date2');
+        createDatePicker('#pres-date3');
+    });
+
+    function createDatePicker(id) {
+        var today = new Date().toISOString().slice(0, 10);
+
+        $(id + " input").val(today);
+        $(id).datetimepicker(
+                {
+                    format: "yyyy-mm-dd",
+                    pickerPosition: "bottom-right",
+                    autoclose: true,
+                    viewSelect: "month",
+                    minView: "month",
+                    language: "ru"
+                }
+        );
+    }
+</script>
+
+
+<script type='text/javascript' src="js/bootstrap-datetimepicker.js"></script>
+<script type='text/javascript' src="js/bootstrap-datetimepicker.ru.js"></script>
+<script type='text/javascript' src="js/contact.js"></script>
+</body>
+</html>
